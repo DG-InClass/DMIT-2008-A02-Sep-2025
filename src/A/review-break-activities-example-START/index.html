@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Review - What you did over break</title>
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">What did you do over break?</h1>
+      <form class="new-topic-form">
+        <div class="mb-3">
+          <label for="new-topic-input" class="form-label">Topic</label>
+          <input type="text" name="new-topic" class="form-control" id="new-topic-input">
+          <div class="invalid-feedback">
+            Please enter a valid topic
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <h5 class="pt-3">Topics</h5>
+      <ul class="topics-list list-group">
+      </ul>
+    </div>    
+  </body>
+</html>
