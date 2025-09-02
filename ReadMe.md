@@ -2,13 +2,17 @@
 
 > **STUDENT_NAME** - Place your name in this line.
 
+## Schedule
+
+> Consult Brightspace for the mark distribution, dates for scheduled evaluations, and the draft planning calendar. See the [**Agenda** in this repo](./Agenda.md) for a day-to-day record/summary of upcoming and completed topics, including additional starter kits.
+
 ## Inside this Repository
 
-This repository is your **Student Workbook** (📝) for participating in the in-class demos and for completing practice homework; your coding work is to be placed in the [*`src/`*](./src/ReadMe.md) folder. Other useful notes can be found in the [**docs** folder](./docs), such as links to [additional Reading Materials](./docs/Readings.md) for the course. Also, you are encouraged to use the [**docs/mynotes**](./docs/mynotes/ReadMe.md) folder to record your notes from each class.
+This repository is Dan Gilleland's **Instructor Workbook** of the in-class demos and assorted homework solutions; see the [*`src/`*](./src/ReadMe.md) folder. I have some additional notes in the [**docs/mynotes**](./docs/mynotes/ReadMe.md) folder to record your notes from each class.
 
-> :warning: **Do *NOT*** use this repository for any assignments that are worth marks. For submitting any work that is worth marks in this course, only use repositories set up/approved by your instructor. :warning:
+The course's [Brightspace site](https://lms.nait.ca/d2l/home) contains official information. Since this course builds on CPSC-1520, consider reviewing JavaScript fundamentals on Dan Gilleland's *ad-hoc* site: [**dgilleland.github.io/CPSC-1520/**](https://dgilleland.github.io/CPSC-1520/).
 
-Additionally, you can find online notes at the course's [Brightspace site](https://lms.nait.ca) and on the unofficial [website notes](https://DMIT-2008.github.io/dmit2008/classes).
+Additionally, you can find online notes at the course's [Brightspace site](https://lms.nait.ca) and on the unofficial [slideshow notes](https://DMIT-2008.github.io/dmit2008/classes).
 
 ### Using This Workbook
 
