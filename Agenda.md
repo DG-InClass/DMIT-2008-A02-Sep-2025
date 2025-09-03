@@ -33,6 +33,9 @@
 - GitHub Account Setup
 - Software Setup
 - Workbook Setup
+
+### Sep 04
+
 - [JavaScript Review (Intro)](https://dmit-2008.github.io/dmit2008/classes/week-1/day-2)
   - [ ] Variables and block scoping
   - [ ] Functions
@@ -42,9 +45,6 @@
 - Homework:
   - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
   - Read [Exploring ES6, chapters 1-3](https://exploringjs.com/es6/)
-
-
-### Sep 04
 
 
 ### Sep 10
