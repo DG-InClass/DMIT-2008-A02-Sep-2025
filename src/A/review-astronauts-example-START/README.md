@@ -17,9 +17,9 @@ Press enter so that you can continue.
     "build": "parcel build"
   },
 ```
-4. View and Explore the api https://ll.thespacedevs.com/2.2.0/swagger/
+4. View and Explore the api https://lldev.thespacedevs.com/2.2.0/swagger/
     - We're going to take a look at the "astronaut" endpoint which gives us a list of astronauts.
-    - We're going ot use the endpoint https://lldev.thespacedevs.com/2.2.0/astronaut/ without any of the filtering that is included (although if you want to you can!)
+    - We're going to use the endpoint https://lldev.thespacedevs.com/2.2.0/astronaut/ without any of the filtering that is included (although if you want to you can!)
 
 5. In the `api/astronaut.js` file create a function named "getAstronautList" and export it.
 6. In the  "getAstronautList" return the fetch that will make a get request to https://lldev.thespacedevs.com/2.2.0/astronaut/
