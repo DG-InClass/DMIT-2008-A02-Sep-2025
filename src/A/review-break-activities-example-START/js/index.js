@@ -16,11 +16,16 @@ const handleFormSubmit = function(evt) {
     const inputControl = controls['new-topic'];
     // I can validate, etc.
     if(inputControl.value.trim() !== '') {
-        // Good input
+        // Good input 🚀
         // Add a list item to the unordered list
         const myList = document.querySelector('ul');
         myList.innerHTML += `<li>${inputControl.value.trim()}</li>`;
+        inputControl.classList.remove('is-invalid');
+        inputControl.value = ''; // reset the form input
+    } else {
+        inputControl.classList.add('is-invalid');
     }
+    inputControl.focus();
 }
 
 // Get the only form on the page...
