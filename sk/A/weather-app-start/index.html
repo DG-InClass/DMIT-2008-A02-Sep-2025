@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>ES6 Example Weather Application</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
+    <form class="frm weather">
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <section class="weather-display">
+      <h1>Weather Update</h1>
+      <div class="details">Location: <span class="location"></span></div>
+      <div class="details">Date: <span class="date"></span></div>
+      <div class="details">Conditions: <span class="conditions"></span></div>
+      <div class="details">Current Temp: <span class="temp"></span></div>
+      <div class="details">Sunrise: <span class="sunrise"></span></div>
+      <div class="details">Sunset: <span class="sunset"></span></div>
+      <div class="forecast"></div>
+    </section>
+
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
