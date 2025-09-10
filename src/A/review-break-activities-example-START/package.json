@@ -1,0 +1,15 @@
+{
+  "name": "review-break-activities-example-start",
+  "version": "1.0.0",
+  "description": "Recalling JavaScript Coding",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
