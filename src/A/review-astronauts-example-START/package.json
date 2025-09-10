@@ -1,0 +1,19 @@
+{
+  "name": "review-astronauts-example-start",
+  "version": "1.0.0",
+  "description": "In this example we're going to see past and present astronauts.",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
