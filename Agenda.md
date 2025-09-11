@@ -55,6 +55,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 11
 
+- [ ] Continue JavaScript Review with the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo
+- [ ] Get the Starter Kit for the Weather App in-class demo; this is an *ad-hoc* starter kit that you can quickly grab using `pnpm`.
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A02-Sep-2025/sk/A/weather-app-start ./src/A/weather-app
+    ```
+
 
 ### Sep 17
 
