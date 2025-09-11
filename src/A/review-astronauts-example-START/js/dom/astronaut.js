@@ -18,7 +18,10 @@ const renderAstronautListItem = function(astronautData, listElement) {
     // single astronaut.
 
     // 1) Extract the data from the object that we want to show
+    //    When destructuring an object, we are "extracting"
+    //    the immediate children of that object
     const { name, bio, profile_image_thumbnail, nationality, date_of_birth, agency, status } = astronautData;
+
     // 2) Show the data (render)
     const newListItem = `<li href="#" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
