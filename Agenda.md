@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-03).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-11).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
