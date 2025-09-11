@@ -12,3 +12,15 @@ replace the instances that have "THIS FORMAT HERE" with the astronautData.
     <p class="mb-1">ASTRONAUT BIO HERE </p>
 </li>
 */
+
+const renderAstronautListItem = function(astronautData, listElement) {
+    // let's interpret astronautData as being the info for a
+    // single astronaut.
+    console.log('Astronaut: ', astronautData);
+    // 1) Extract the data from the object that we want to show
+    // 2) Show the data (render)
+    const newListItem = `<li>Data for ${astronautData.name}</li>`;
+    listElement.innerHTML =+ newListItem;
+}
+
+export { renderAstronautListItem }
