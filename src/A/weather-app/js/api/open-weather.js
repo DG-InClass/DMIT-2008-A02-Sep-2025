@@ -11,6 +11,7 @@ const BASE_API_URL = 'https://api.openweathermap.org/data/2.5/';
 const queryString = ({endpoint, city, country}) =>
     `${endpoint}?q=${city},${country}&units=metric&appid=${VITE_OPEN_WEATHER_API}`;
 
+// Ask dan about: fetch(url).then(handleResponse).then(callback)
 const fetchData = ({url, callback}) => {
     fetch(url).then(handleResponse).then(callback);
 }
