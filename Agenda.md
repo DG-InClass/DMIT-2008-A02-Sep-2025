@@ -82,6 +82,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 24
 
+- **Today**
+  - [ ] Review the other [NextJS/React Intro demos](./src/B/ReadMe.md)
 
 ### Sep 25
 
