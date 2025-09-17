@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-11).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-17).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -65,8 +65,19 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 17
 
+- **Today**
+  - More [JavaScript Review](https://dmit-2008.github.io/dmit2008/classes/week-2/day-2)
+  - Work on Weather App demo
+- **Homework**
+  - *Review [complete solution for Weather App](https://dgilleland.github.io/DMIT-2008/lessons/w02-d2/) demo*
+
 
 ### Sep 18
+
+- **Today**
+  - [Intro to React and NextJS](https://dmit-2008.github.io/dmit2008/classes/week-3/day-1)
+  - [Props, Wrappers, and Lists (Part 1)](https://dmit-2008.github.io/dmit2008/classes/week-3/day-2)
+  - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
 
 
 ### Sep 24
