@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
+
+    <script defer src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script defer src="js/plugins.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body>
@@ -34,17 +38,13 @@
 
     <section class="weather-display">
       <h1>Weather Update</h1>
-      <div class="details">Location: <span class="location"></span></div>
-      <div class="details">Date: <span class="date"></span></div>
-      <div class="details">Conditions: <span class="conditions"></span></div>
-      <div class="details">Current Temp: <span class="temp"></span></div>
-      <div class="details">Sunrise: <span class="sunrise"></span></div>
-      <div class="details">Sunset: <span class="sunset"></span></div>
-      <div class="forecast"></div>
+      <div class="details">Location: <span id="location"></span></div>
+      <div class="details">Date: <span id="date"></span></div>
+      <div class="details">Conditions: <span id="conditions"></span></div>
+      <div class="details">Current Temp: <span id="temp"></span></div>
+      <div class="details">Sunrise: <span id="sunrise"></span></div>
+      <div class="details">Sunset: <span id="sunset"></span></div>
+      <div id="forecast"></div>
     </section>
-
-    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>

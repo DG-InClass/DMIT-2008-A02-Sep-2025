@@ -1,0 +1,15 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "The weather app is a sample application that will be used as an example for exploring best practices and new topics in JavaScript, specifically ES6. The app will serve as a solid foundation for completing the first two major assignments in the course.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}
