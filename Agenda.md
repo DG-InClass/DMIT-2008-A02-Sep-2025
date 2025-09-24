@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-17).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-24).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -83,15 +83,22 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Sep 24
 
 - **Today**
+  - ***Lab Questions** will be addressed in the last 15 minutes of class.*
+    - *Note the requirements for **incremental work** and how you might **lose 50%** of your mark for not doing it!*
   - [ ] Review the other [NextJS/React Intro demos](./src/B/ReadMe.md)
+  - [ ] Identify the [**main takeaways**](./src/B/Takeaways.md)
 
 ### Sep 25
 
-- **Today** - Begin [Part C](./src/C/ReadMe.md)
+- **Today**
+  - [ ] Complete Part B - Bootstrap and MUI
+  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 
 ### Oct 01
 
+- **Today**
+  - [ ] Complete Part C
 
 ### Oct 02
 
