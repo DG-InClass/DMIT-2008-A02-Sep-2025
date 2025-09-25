@@ -2,6 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+// Notice how I'm using deconstruction syntax when
+// getting components from MUI.
+import { Container, Box, Typography} from '@mui/material';
+// I could have done them individually
+// import Container from '@mui/material/Container';
+// import Box from '@mui/material/Box';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +33,21 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
+          <Container maxWidth="sm">
+            <Box sx={{ my: 4 }}>
+              {/* we'll add some content here.*/}
+              {/* 
+                The curly braces are the JSX placeholders. I use a multi-line JS comment
+                to make some note for myself 
+              */}
+              <Typography variant="h2" component="h2">
+                MUI looks good.
+              </Typography>
+              <Typography variant="p" component="p">
+                You can perhaps see why this is a popular package.
+              </Typography>         
+            </Box>
+          </Container>
         </main>
       </div>
     </>
