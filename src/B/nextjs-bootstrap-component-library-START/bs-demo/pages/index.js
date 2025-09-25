@@ -2,6 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ComponentLibraiesList from '../components/ComponentLibrariesList';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +31,16 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
+          <Container>
+            <Row>
+              <Col>
+                <Button>This is a button. Click to see what it does.</Button>
+              </Col>
+              <Col>
+                <ComponentLibraiesList></ComponentLibraiesList>
+              </Col>
+            </Row>
+          </Container>
         </main>
       </div>
     </>
