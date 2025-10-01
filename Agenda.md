@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-24).
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-01).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -92,13 +92,12 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - [ ] Complete Part B - Bootstrap and MUI
-  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 
 ### Oct 01
 
 - **Today**
-  - [ ] Complete Part C
+  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 ### Oct 02
 
