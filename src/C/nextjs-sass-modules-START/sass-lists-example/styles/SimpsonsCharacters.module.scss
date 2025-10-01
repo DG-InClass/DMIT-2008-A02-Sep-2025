@@ -1,0 +1,21 @@
+// SimpsonsCharacters.module.scss
+
+.list {
+  background-color: #9bdcdf;
+  min-width: 18%;
+  list-style: none;
+  padding-top:  10px;
+  padding-bottom:  10px;
+}
+
+.list-item {
+  font-weight: 100;
+
+  &:hover {
+    font-size: 120%;
+  }
+}
+
+.spacing {
+  margin: 5px;
+}
