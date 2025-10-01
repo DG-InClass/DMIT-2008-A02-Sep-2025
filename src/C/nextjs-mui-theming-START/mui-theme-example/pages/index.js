@@ -23,15 +23,18 @@ export default function Home() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet" />
       </Head>
 
       <main>
         <Container maxWidth="md">
           <Box sx={{ my: 4 }}>
-            <Typography variant="h2" component="h2">
+            <Typography variant="h2" component="h2" color="primary">
               MUI Example
             </Typography>
-            <Typography variant="p" component="p">
+            <Typography variant="p" component="p" color="secondary">
               You can perhaps see why this is a popular package.
             </Typography>
             
