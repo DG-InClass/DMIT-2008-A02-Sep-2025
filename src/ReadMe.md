@@ -8,7 +8,11 @@ This **`src`** folder is where you will place practice and demo material from ea
 
 ## Starter Kits
 
-The following starter kits are for in-class and/or practice work in DMIT-2008. They are arranged according to the main topics in the Brightspace course materials. They might differ from starter kits available on Brightspace, but probably not in any significant way.
+The following starter kits are for in-class and/or practice work in DMIT-2008. They are arranged according to the main topics in the Brightspace course materials.
+
+> See the [**Planning Calendar**](../Calendar.md) for the estimated delivery period.
+ 
+They might differ from starter kits available on Brightspace, but probably not in any significant way.
 
 There may be additional starter kits supplied by your instructor which you can grab using the [ad-hoc](#ad-hoc-starter-kitsdemos) download process using `degit`.
 
