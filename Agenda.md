@@ -109,6 +109,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Oct 09
 
+- **Today** - Continue [Part D](./src/D/ReadMe.md)
 
 ### Oct 15
 
