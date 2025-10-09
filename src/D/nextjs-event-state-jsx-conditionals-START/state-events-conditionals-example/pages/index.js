@@ -23,12 +23,31 @@ export default function Home() {
   // I'll use React state to help me manage the movies that
   // I will display to the user
   const [movies, setMovies] = useState(MOVIE_LIST);
+  // A state for the error message
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Stop it from sending to the back end
     console.log('search: ', search);
     console.log('year:', year);
-    filterMovies();
+    if(validateUserInput) filterMovies();
+  }
+
+  const validateUserInput = () => {
+    let isValid = true; // Optimistically
+    // Attempt to convert to a number
+    let yearNumber = parseInt(year);
+    if(isNaN(yearNumber)) {
+      isValid = false;
+      setErrorMessage(`${year} is not a valid number`);
+    } else {
+      const currentYear = new Date().getFullYear();
+      if(yearNumber < 1950 || yearNumber > currentYear) {
+        isValid = false;
+        setErrorMessage(`We do not have movies for the year ${year}.`);
+      }
+    }
+    return isValid;
   }
 
   const filterMovies = () => {
@@ -104,6 +123,9 @@ export default function Home() {
               </Grid>
               <Grid item xs={10}>
                 {/* Add the error message here*/}
+                { errorMessage !== "" && 
+                  <Alert severity='error'>{errorMessage}</Alert>
+                }
               </Grid>
             </Grid>
           </form>
