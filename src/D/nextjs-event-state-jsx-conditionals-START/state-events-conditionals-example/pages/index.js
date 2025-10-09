@@ -20,11 +20,35 @@ export default function Home() {
   // Data items directly associated with user input from the form
   const [search, setSearch] = useState(""); // search text
   const [year, setYear] = useState(""); // year filter
+  // I'll use React state to help me manage the movies that
+  // I will display to the user
+  const [movies, setMovies] = useState(MOVIE_LIST);
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Stop it from sending to the back end
     console.log('search: ', search);
     console.log('year:', year);
+    filterMovies();
+  }
+
+  const filterMovies = () => {
+    // make a copy of the original movie list
+    let filteredMovies = [...MOVIE_LIST]; // spread operator
+
+    // apply filtering of the search text to that list
+    if(search.trim() !== "") {
+      filteredMovies = filteredMovies.filter((movieData) => {
+        let movieName = movieData.name.toLowerCase();
+        let partialName = search.toLowerCase();
+        return movieName.includes(partialName);
+      })
+    }
+    
+    // apply filtering of the year to that list
+    // TODO:
+
+    // update the state with the filtered data
+    setMovies(filteredMovies); // the state of my component updated
   }
 
   return (
@@ -78,7 +102,8 @@ export default function Home() {
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
-          { MOVIE_LIST.map((movieData, index)=> {
+          { /* Swapped out the imported data for the state variable */}
+          { movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
