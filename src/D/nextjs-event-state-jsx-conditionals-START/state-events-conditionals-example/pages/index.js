@@ -20,7 +20,13 @@ export default function Home() {
   // Data items directly associated with user input from the form
   const [search, setSearch] = useState(""); // search text
   const [year, setYear] = useState(""); // year filter
-  
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Stop it from sending to the back end
+    console.log('search: ', search);
+    console.log('year:', year);
+  }
+
   return (
     <div>
       <Head>
@@ -38,7 +44,7 @@ export default function Home() {
           <Typography variant="h2" component="h2" style={{textAlign: "center"}}>
             Movies
           </Typography>
-          <form style={{width: '100%'}}>
+          <form style={{width: '100%'}} onSubmit={handleSubmit}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <TextField
@@ -46,7 +52,8 @@ export default function Home() {
                   label="search..."
                   variant="standard"
                   sx={{width: '100%'}}
-                  
+                  onChange={(e) => {setSearch(e.target.value)}}
+                  value={search}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -55,7 +62,8 @@ export default function Home() {
                   label="year"
                   variant="standard"
                   sx={{width: '100%'}}
-                 
+                  onChange={(e) => {setYear(e.target.value)}}
+                  value={year}
                 />
               </Grid>
               <Grid item xs={2}>
