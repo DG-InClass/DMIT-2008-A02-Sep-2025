@@ -109,7 +109,7 @@ export default function Home() {
           </form>
           <List sx={{width: `100%`}}>
           { /* Swapped out the imported data for the state variable */}
-          { movies.length === 0 && 
+          { movies.length === 0 ? 
             <ListItem>
               <ListItemText>
                 <Typography variant="p" component="div">
@@ -117,8 +117,7 @@ export default function Home() {
                 </Typography>
               </ListItemText>
             </ListItem>
-          }
-          { movies.map((movieData, index)=> {
+          : movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
