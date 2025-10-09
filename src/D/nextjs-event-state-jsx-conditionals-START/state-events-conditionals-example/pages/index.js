@@ -45,7 +45,13 @@ export default function Home() {
     }
     
     // apply filtering of the year to that list
-    // TODO:
+    if(year.trim() !== "") {
+      let yearNumber = parseInt(year);
+      filteredMovies = filteredMovies.filter((movieData) => {
+        // comparison of the Year
+        return yearNumber === movieData.year;
+      })
+    }
 
     // update the state with the filtered data
     setMovies(filteredMovies); // the state of my component updated
