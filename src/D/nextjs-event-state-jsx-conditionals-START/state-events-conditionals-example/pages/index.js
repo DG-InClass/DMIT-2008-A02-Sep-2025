@@ -1,4 +1,5 @@
-import { MOVIE_LIST } from '../utils/movies'
+import { MOVIE_LIST } from '../utils/movies';
+import { useState } from 'react'; // This is our "hook" to tell React about data (state) that will be affecting our component.
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -16,6 +17,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
 export default function Home() {
+  // Data items directly associated with user input from the form
+  const [search, setSearch] = useState(""); // search text
+  const [year, setYear] = useState(""); // year filter
+  
   return (
     <div>
       <Head>
