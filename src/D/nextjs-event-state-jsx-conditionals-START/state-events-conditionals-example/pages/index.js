@@ -109,6 +109,15 @@ export default function Home() {
           </form>
           <List sx={{width: `100%`}}>
           { /* Swapped out the imported data for the state variable */}
+          { movies.length === 0 && 
+            <ListItem>
+              <ListItemText>
+                <Typography variant="p" component="div">
+                  No results match your filter criteria.
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          }
           { movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
