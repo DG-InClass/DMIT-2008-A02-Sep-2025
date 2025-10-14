@@ -14,27 +14,30 @@ We're also going to use a rest api client to observe what's going on in the rest
 # Steps
 
 1. Open your rest api client and get a random quote, so we can see the payload.
-- make a get request to `https://api.quotable.io/random` as per the documentation.
+- make a get request to ~~`https://api.quotable.io/random`~~ **`https://favqs.com/api/qotd`** as per [the documentation](https://favqs.com/api).
 You'll see that the response body returns something like this.
 ```json
 {
-    "_id": "GQ8whOuPGD8Z",
-    "tags": [
-        "famous-quotes"
-    ],
-    "content": "The beginning of wisdom is found in doubting; by doubting we come to the question, and by seeking we may come upon the truth.",
-    "author": "Peter Abelard",
-    "authorSlug": "peter-abelard",
-    "length": 125,
-    "dateAdded": "2019-10-03",
-    "dateModified": "2019-10-03"
-}
-```
-2. Navigate in our `rest-fundamentals-example` and run the project.
+  "qotd_date": "2025-10-12T00:00:00.000+00:00",
+  "quote": {
+    "id": 68079,
+    "dialogue": false,
+    "private": false,
+    "tags": [],
+    "url": "https://favqs.com/quotes/mrs-francina-friesen/68079-doubt-that-th-",
+    "favorites_count": 2,
+    "upvotes_count": 0,
+    "downvotes_count": 0,
+    "author": "Mrs. Francina Friesen",
+    "author_permalink": "mrs-francina-friesen",
+    "body": "Doubt that the sun doth move, doubt truth to be a liar, but never doubt I love."
+  }
+}```
+1. Navigate in our `rest-fundamentals-example` and run the project.
 Notes:
 - This project is using [MUI](https://mui.com/) and is using some components, note that you should begin to feel a bit more comfortable navigating this documentation.
 - run the project. 
-3. We're going to use one stateful variable to change the author and the quote values, it's going to be an object with that contains two strings: `author` and `quote`.
+1. We're going to use one stateful variable to change the author and the quote values, it's going to be an object with that contains two strings: `author` and `quote`.
 - import the `useState` hook from react.
 ```js
 import {useState} from 'react'
@@ -63,7 +66,7 @@ Note: as a review of state, state can contain any type of data structure here we
 </Typography>
 ```
 
-4. Next let's create a click handler function and hook it up to the `onClick` event to the button. The handler will set new values to the quote.
+1. Next let's create a click handler function and hook it up to the `onClick` event to the button. The handler will set new values to the quote.
 - let's first create the event handler.
 ```js
   const handleClick = () => {
@@ -83,10 +86,10 @@ Note: as a review of state, state can contain any type of data structure here we
 </Button>
 ```
 Observe what happens when you click the button, the project 
-5. Let's hook up the quote api with our project.
+1. Let's hook up the quote api with our project.
 - under the function definition of home create a const that will have the url.
 ```js
-const RANDOM_QUOTE_URL = 'https://api.quotable.io/random'
+const RANDOM_QUOTE_URL = 'https://favqs.com/api'
 ```
 - change `handleClick` function so that we fetch the url and with the result we use the `setQuoteData` function to change the values.
 ```js
@@ -96,8 +99,13 @@ const RANDOM_QUOTE_URL = 'https://api.quotable.io/random'
         return response.json()
       }).then((data)=> {
         setQuoteData({
-          quote: data.content,
-          author: data.author
+          quote: data.quote.body,
+          author: data.quote.author
+        })
+      }).catch((err)=> {
+        setQuoteData({
+          quote: 'Coding Advice: If it\'s broke, it\'s your fault',
+          author: 'Dan Gilleland'
         })
       })
   }
