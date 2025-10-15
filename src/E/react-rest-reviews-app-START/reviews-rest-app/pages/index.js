@@ -27,14 +27,51 @@ import TextField from '@mui/material/TextField';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-
+import { useState } from 'react';
 
 export default function Home() {
-  const MOCK_ADAPTATION_RATING = [{
-    'title': 'Fight Club',
-    'comment': 'Great movie and book',
-    'rating': 10
-  }]
+  // Set up my component's state
+  // The list of reviews from the backend
+  const [reviews, setReviews] = useState([]); // Empty array default
+  // The user input from the form
+  const [title, setTitle] = useState(""); // Empty string default
+  const [comments, setComments] = useState(""); // Empty string default
+  const [rating, setRating] = useState(0); // Zero default (for "no rating")
+
+  // Create our event handlers
+  const handleSubmit = (fredFlintstone) => {
+    fredFlintstone.preventDefault();
+    // This structure matches the way data is stored in the backend
+    const data = {
+      title,              // title: title
+      comment: comments,
+      rating              // rating: rating
+    }
+    // Let's save the data!
+    fetch('http://localhost:5000/reviews', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(response => response.json())
+    .then(data => {
+      // An "echo" of the information we sent in
+      console.log(data); // there's an extra piece of info
+      // Update the list of reviews we're currently showing
+      setReviews([data, ...reviews]);
+    });
+  }
+
+  const loadAllReviewsButton = () => {
+    fetch('http://localhost:5000/reviews')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setReviews(data);
+      });
+  }
+  
   return (
     <div>
       <Head>
@@ -51,7 +88,7 @@ export default function Home() {
       </AppBar>
       <main>
         <Container maxWidth="md">
-          <form>
+          <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={12}>
                 <TextField
@@ -60,6 +97,8 @@ export default function Home() {
                   label="Adaptation Title"
                   fullWidth
                   variant="standard"
+                  value={title}
+                  onChange={(e)=>{setTitle(e.target.value);}}
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -69,6 +108,8 @@ export default function Home() {
                   label="Comments"
                   fullWidth
                   variant="standard"
+                  value={comments}
+                  onChange={(e) => { setComments(e.target.value); }}
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -78,6 +119,8 @@ export default function Home() {
                     row
                     aria-labelledby="adaptation-rating"
                     name="rating-buttons-group"
+                    value={rating}
+                    onChange={(e) => { setRating(e.target.value); }}
                   >
                     <FormControlLabel value="1" control={<Radio />} label="1" />
                     <FormControlLabel value="2" control={<Radio />} label="2" />
@@ -110,11 +153,12 @@ export default function Home() {
           >
             <Button
               variant="contained"
+              onClick={loadAllReviewsButton}
             >
               Load All Current Reviews
             </Button>
           </Box>
-          {MOCK_ADAPTATION_RATING.map((adaptation, index)=> {
+          {reviews.map((adaptation, index)=> {
             return <Card key={index}>
               <CardHeader
                 avatar={
