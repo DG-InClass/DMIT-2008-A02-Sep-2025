@@ -114,10 +114,20 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 15
 
 - **Today** - Begin [Part E](./src/E/ReadMe.md)
-  - 15 Minutes: [API Calls](src\E\react-rest-fundamentals-START\README.md)
+  - 15 Minutes: [API Calls](./src/E/react-rest-fundamentals-START/README.md)
+    - **Use something other than Quotes!** - https://www.apicountries.com ⭐ The Repo!!
+  - 10 Minutes: **What is REST?**
+    - 📺 [REST APIs Explained in 30 secs](https://youtube.com/shorts/hQUjpbb75eY?si=HQ_pLE1seM5Ry34a) (**0:30**)
+    - 📺 [What is a Rest API? (in 2 Minutes)](https://youtu.be/WRsKs-K6iII?si=KmY0EUARM7WsNVsx) (**2:10**)
+    - 📺 [What Is REST API? Examples And How To Use It: Crash Course System Design](https://youtu.be/-mN3VyJuCjM?si=mSE4UNsvRJ9p_xTO) (**5:20**)
+  - 90 Minutes: [REST Calls on an API](./src/E/react-rest-reviews-app-START/README.md)
   - [ ] Identify the [**main takeaways**](./src/E/Takeaways.md)
+- **Homework**
+  - [ ] Try the refactoring of the [Rest Review Day 2](./src/E/react-rest-reviews-app-START/README-DAY-2.md) on your own
+  - [ ] Begin ***Assignment 3*** - States, Events and Templating
 
-### Oct 16
+
+### Oct 20
 
 
 ### Oct 22
@@ -125,8 +135,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today** - Begin [Part F](./src/F/ReadMe.md)
   - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
   - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
-- **Homework**
-  - [ ] Begin ***Assignment 3*** - States, Events and Templating
 
 ### Oct 23
 
