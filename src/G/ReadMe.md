@@ -4,5 +4,7 @@ The following starter kits are for in-class and/or practice work in DMIT-2008. T
 
 ## React Components and LifeCycle
 
+> Read about [`useEffect()`](./useEffect.md).
+
 - [App with Lifecycle](./reviews-app-with-lifecycle-START/README.md)
-- [Mounting Fundamentals](./react-mounting-fundamentals-START/README.md)
+- [~~Mounting Fundamentals~~](./react-mounting-fundamentals-START/README.md) - TO BE REPLACED...

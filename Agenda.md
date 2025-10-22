@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-01). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-22). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -113,6 +113,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Oct 15
 
+
 - **Today** - Begin [Part E](./src/E/ReadMe.md)
   - 15 Minutes: [API Calls](./src/E/react-rest-fundamentals-START/README.md)
     - **Use something other than Quotes!** - https://www.apicountries.com ⭐ The Repo!!
@@ -127,19 +128,31 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [ ] Begin ***Assignment 3*** - States, Events and Templating
 
 
-### Oct 20
+### Oct 16
+
+- **Today**
+  - [ ] *Lab time*
+  
+
 
 
 ### Oct 22
 
-- **Today** - Begin [Part F](./src/F/ReadMe.md)
-  - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
-  - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
+- **Today**
+  - [Part F](./src/F/ReadMe.md) - **Deploying to Vercel**
+    - Try the [Deploy-React-App](https://github.com/dgilleland/Deploy-React-App) as a starter kit.
+    - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
+    - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
+- **Homework**
+  - Try deploying another website of yours to Vercel.
 
 ### Oct 23
 
 - **Today**
-  - [ ] *Lab time*
+  - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+  - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+- **Homework**
+  - Install the [React Dev Tools](https://react.dev/learn/react-developer-tools) for your browser.
 
 ### Oct 29
 
