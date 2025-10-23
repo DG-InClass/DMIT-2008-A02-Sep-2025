@@ -42,6 +42,17 @@ export default function Home() {
     loadAllReviews(); // Call the code that the button used to call
   }, []);
 
+  // Because this parent is managing all the state (and passing
+  // details to child components), I will have a method to delete
+  // reviews inside this parent component
+  const deleteReviewItem = (deleteReviewId) => {
+    // 1) Update my local state in this component
+    let allReviews = reviews.filter((itemToKeep) => itemToKeep.id !== deleteReviewId); // everything but the deleted item
+    setReviews(allReviews); // inform React via useState of the modifications
+    // 2) Call the backend to delete the review item
+    //    TODO...
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
     postReview({
@@ -149,6 +160,8 @@ export default function Home() {
           {reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
                 key={index}
+                id={adaptation.id}
+                deleteCallback={deleteReviewItem}
                 rating={adaptation.rating}
                 title={adaptation.title}
                 comment={adaptation.comment}

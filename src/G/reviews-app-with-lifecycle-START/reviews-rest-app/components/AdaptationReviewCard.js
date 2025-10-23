@@ -11,6 +11,14 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 
 export default function AdaptationReviewCard(props) {
+  // props parameter contains all the data sent from the parent
+
+  const deleteReviewHandler = (reviewId) => {
+    console.log(`deleting ${reviewId}...`);
+    // We're ready to do the delete thing....
+    props.deleteCallback(reviewId);
+  }
+
   return <Card sx={{mt: 2 }}>
     <CardHeader
       avatar={
@@ -20,7 +28,7 @@ export default function AdaptationReviewCard(props) {
       }
       
       action={
-        <IconButton>
+        <IconButton onClick={() => {deleteReviewHandler(props.id)}}>
           <DeleteIcon />
         </IconButton>
       }
