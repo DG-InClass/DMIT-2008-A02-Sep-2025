@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useEffect, useState} from 'react';
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -32,6 +32,14 @@ export default function Home() {
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
+
+  // Make use of the useEffect() hook so that when
+  // our <Home> page/component is "mounted", we will
+  // have all of the Reviews from the backend loaded
+  // and displaying on the page.
+  useEffect(() => {
+    console.log('Home component is mounted (added to the DOM)');
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault()
