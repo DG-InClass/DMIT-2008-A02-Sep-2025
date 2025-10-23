@@ -10,13 +10,21 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 
+// Import the function to call the backend...
+import { deleteReviewItem } from '../utils/api/reviews';
+
 export default function AdaptationReviewCard(props) {
   // props parameter contains all the data sent from the parent
 
   const deleteReviewHandler = (reviewId) => {
     console.log(`deleting ${reviewId}...`);
-    // We're ready to do the delete thing....
-    props.deleteCallback(reviewId);
+    // This child component is calling the backend for the delete
+    deleteReviewItem(reviewId).then(data => {
+      // and then informing the parent so that the
+      // parent can update its state in response
+      // We're ready to do the delete thing....
+      props.deleteCallback(reviewId);
+    });
   }
 
   return <Card sx={{mt: 2 }}>
