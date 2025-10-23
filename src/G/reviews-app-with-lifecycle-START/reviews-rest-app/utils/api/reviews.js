@@ -44,4 +44,13 @@ const postReview = ({title, comment, rating}) => {
   })
 }
 
-export { getReviews, postReview }
+const deleteReviewItem = (id) => {
+  // Call the backend to perform a RESTful delete
+  return fetch(`${BASE_URL}/reviews/${id}`, {
+    method: "DELETE" // RESTful delete call
+  })
+  .then(resp => resp.json())
+  .then(data => Promise.resolve(data));
+}
+
+export { getReviews, postReview, deleteReviewItem }
