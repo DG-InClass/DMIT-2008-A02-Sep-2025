@@ -39,6 +39,7 @@ export default function Home() {
   // and displaying on the page.
   useEffect(() => {
     console.log('Home component is mounted (added to the DOM)');
+    loadAllReviews(); // Call the code that the button used to call
   }, []);
 
   const handleSubmit = (event) => {
@@ -52,7 +53,7 @@ export default function Home() {
       })
   }
 
-  const loadAllReviewsButton = () => {
+  const loadAllReviews = () => {
     getReviews().then((data)=> {
       setReviews(data)
     })
@@ -144,12 +145,6 @@ export default function Home() {
               pb: 2,
             }}
           >
-            <Button
-              variant="contained"
-              onClick={loadAllReviewsButton}
-            >
-              Load All Current Reviews
-            </Button>
           </Box>
           {reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
