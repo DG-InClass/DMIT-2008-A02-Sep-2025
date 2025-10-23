@@ -7,6 +7,9 @@ import CardContent from '@mui/material/CardContent';
 
 import Typography from '@mui/material/Typography';
 
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from '@mui/material/IconButton';
+
 export default function AdaptationReviewCard(props) {
   return <Card sx={{mt: 2 }}>
     <CardHeader
@@ -16,6 +19,12 @@ export default function AdaptationReviewCard(props) {
         </Avatar>
       }
       
+      action={
+        <IconButton>
+          <DeleteIcon />
+        </IconButton>
+      }
+
       title={
         <Typography variant="body2" color="text.secondary">
           {props.title}
