@@ -163,14 +163,14 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 30
 
 - **Today**
-  - [Part I](./src/I/ReadMe.md) - **Next JS Routing**
+  - [Part I](./src/I/ReadMe.md) - **SSR**
     - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
     - [Takeaways](./src/I/Takeaways.md)
 
 ### Nov 05
 
 - **Today**
-  - Continue [Part I](./src/I/ReadMe.md) - **Next JS Routing**
+  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
     - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
 
 ### Nov 06
