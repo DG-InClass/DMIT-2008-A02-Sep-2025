@@ -33,11 +33,15 @@ export default function Agency() {
           <Container sx={{paddingTop: 2}}>
             <Grid container>
                 <Grid item xs="2">
-                    (TBD)
+                    <img
+                      alt={agencyDetails.name}
+                      src={agencyDetails.logo_url}
+                      style={{ width: `120px` }} 
+                    />
                 </Grid>
                 <Grid item xs="10">
                     <Typography variant="h3" gutterBottom>
-                        Agency Page for {id}
+                        {`${agencyDetails.name} (${agencyDetails.abbrev})`}
                     </Typography>
                 </Grid>
             </Grid>
