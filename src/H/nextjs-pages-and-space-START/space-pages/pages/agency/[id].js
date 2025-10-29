@@ -44,6 +44,21 @@ export default function Agency() {
                         {`${agencyDetails.name} (${agencyDetails.abbrev})`}
                     </Typography>
                 </Grid>
+                <Grid item xs="4">
+                    <Typography variant="h5">Launch Details</Typography>
+                    <SimpleDetailsCard 
+                        title={'Total Launches'}
+                        description={agencyDetails.total_launch_count}
+                    />
+                    <SimpleDetailsCard 
+                        title={'Successful Launches'}
+                        description={agencyDetails.successful_launches}
+                    />
+                    <SimpleDetailsCard 
+                        title={'Successful Landing'}
+                        description={agencyDetails.successful_landings}
+                    />
+                </Grid>
             </Grid>
           </Container>
         }
