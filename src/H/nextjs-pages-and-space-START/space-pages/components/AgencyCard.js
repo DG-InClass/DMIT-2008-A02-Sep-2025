@@ -10,8 +10,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+import { useRouter } from 'next/router';
+
 export default function AgencyCard(props) {
-    return <Card sx={{ marginTop: "8px", maxWidth: 345 }}>
+  const router = useRouter();
+
+  const navigateToAgencyPage = () => {
+    router.push(`/agency/${props.id}`);
+  }
+
+  return <Card sx={{ marginTop: "8px", maxWidth: 345 }}>
     {props.imageUrl && <CardMedia
       component="img"
       height="140"
@@ -30,7 +38,7 @@ export default function AgencyCard(props) {
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small">Go to Agency</Button>
+      <Button size="small" onClick={navigateToAgencyPage}>Go to Agency</Button>
     </CardActions>
   </Card>
 }

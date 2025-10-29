@@ -7,7 +7,12 @@ import NavBar from '@components/NavBar';
 import SimpleDetailsCard from '@components/SimpleDetailsCard';
 import LoadingCircle from '@components/LoadingCircle';
 
+import { useRouter } from 'next/router';
+
 export default function Agency() {
+    const router = useRouter();
+    const { id } = router.query; // Note: this uses destructuring
+
     return <>
         <NavBar />
         <Container sx={{paddingTop: 2}}>
@@ -17,7 +22,7 @@ export default function Agency() {
                 </Grid>
                 <Grid item xs="10">
                     <Typography variant="h3" gutterBottom>
-                        Agency Page
+                        Agency Page for {id}
                     </Typography>
                 </Grid>
             </Grid>
