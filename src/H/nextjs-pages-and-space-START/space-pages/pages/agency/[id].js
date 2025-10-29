@@ -27,7 +27,10 @@ export default function Agency() {
 
     return <>
         <NavBar />
-        <Container sx={{paddingTop: 2}}>
+        { !agencyDetails ? 
+          <LoadingCircle />
+          :
+          <Container sx={{paddingTop: 2}}>
             <Grid container>
                 <Grid item xs="2">
                     (TBD)
@@ -38,6 +41,7 @@ export default function Agency() {
                     </Typography>
                 </Grid>
             </Grid>
-        </Container>
+          </Container>
+        }
     </>
 }
