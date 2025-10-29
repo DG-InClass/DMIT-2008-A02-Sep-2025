@@ -7,8 +7,18 @@ import Box from '@mui/material/Box';
 import AgencyCard from '@components/AgencyCard';
 import NavBar from '@components/NavBar';
 
+import { useEffect, useState } from 'react';
+import { getAgencies } from '@utils/api/agencies';
 
 export default function Home() {
+  const [agenciesData, setAgenciesData] = useState([]);
+
+  useEffect(() => {
+    getAgencies().then(data => {
+      console.log(data);
+      setAgenciesData(data.results);
+    }); // end of .then()
+  }, []); // remember to put in the 2nd argument for the dependencies
 
   return (
     <div>
@@ -33,6 +43,14 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
+            {agenciesData.map(agency => <AgencyCard
+                                          key={agency.id}
+                                          id={agency.id}
+                                          imageUrl={agency.image_url}
+                                          name={agency.name}
+                                          abbreviation={agency.abbrev}
+                                          description={agency.description}
+            />)}
           </Box>
         </Container>
 
