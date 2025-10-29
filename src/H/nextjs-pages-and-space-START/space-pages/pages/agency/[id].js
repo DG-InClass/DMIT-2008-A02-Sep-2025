@@ -8,10 +8,22 @@ import SimpleDetailsCard from '@components/SimpleDetailsCard';
 import LoadingCircle from '@components/LoadingCircle';
 
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { getAgency } from '@utils/api/agencies';
 
 export default function Agency() {
+    // When using state, put it first in your component
+    const [agencyDetails, setAgencyDetails] = useState();
+
     const router = useRouter();
     const { id } = router.query; // Note: this uses destructuring
+
+    useEffect(() => {
+        getAgency(id).then(data => {
+            setAgencyDetails(data);
+        });
+    }, [id]); // Notice we are depending on the id from routing
+
 
     return <>
         <NavBar />
