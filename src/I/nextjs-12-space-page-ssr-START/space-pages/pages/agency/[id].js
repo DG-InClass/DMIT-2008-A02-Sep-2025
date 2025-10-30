@@ -14,17 +14,33 @@ import LoadingCircle from '@components/LoadingCircle'
 
 import {getAgency} from '@utils/api/agencies'
 
-export default function Agency() {
-  const [agencyDetails, setAgencyDetails] = useState()
+// If we want to await something inside our function
+// then our function needs to be async
+export async function getServerSideProps(context) {
+  const { id } = context.params;
+  // Call our 3rd-party API
+  const agencyInfo = await getAgency(id);
+  // Return the important info
+  return {
+    props: {
+      id: id,
+      agencyInfo: agencyInfo
+    }
+  }
+}
 
-  const router = useRouter()
-  const { id } = router.query
+export default function Agency(props) {
+  // const [agencyDetails, setAgencyDetails] = useState()
 
-  useEffect(()=> {
-      getAgency(id).then((data)=> {
-          setAgencyDetails(data)
-      })
-  }, [id])
+  const router = useRouter();
+  // const { id } = router.query
+  const agencyDetails = props.agencyInfo;
+
+  // useEffect(()=> {
+  //     getAgency(id).then((data)=> {
+  //         setAgencyDetails(data)
+  //     })
+  // }, [id])
 
   return <>
     <NavBar />
