@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-29). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#nov-06). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -170,18 +170,23 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Nov 05
 
 - **Today**
-  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
-    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
+  - *Technical difficulties with my computer prevented us covering today's scheduled material.*
 
 ### Nov 06
 
 - **Today**
-  - Testing - the start of a multi-day journey....
+  - Continue [Part I](./src/I/ReadMe.md) - **SSR**
+    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
+    - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
+  - *Assignment 4A* - QnA
+  - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
 
 ### Nov 12
 
 - **Today**
-  - Testing (cont.)
+  - Testing - the start of a multi-day journey....
+  - Begin [Part J](./src/J/ReadMe.md)
+  - Review notes on [**Week 10, Day 2**](https://dgilleland.github.io/DMIT-2008/lessons/w12-d1/)
 
 ### Nov 13
 
@@ -195,12 +200,21 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Nov 20
 
+- **Today**
+  - Begin [Part K](./src/K/ReadMe.md)
+    - `useContext()` and Application State
 
 ### Nov 26
 
+- **Today**
+  - Continue [Part K](./src/K/ReadMe.md)
+    - Authentication
 
 ### Nov 27
 
+- **Today**
+  - General Review
+  - About *Assignment **5***
 
 ### Dec 03
 
