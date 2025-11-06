@@ -164,7 +164,7 @@ export default function Home(props) {
               pb: 2,
             }}
           >
-          {reviews.map((adaptation, index)=> {
+          {props.reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
                 key={index}
                 id={adaptation.id}
