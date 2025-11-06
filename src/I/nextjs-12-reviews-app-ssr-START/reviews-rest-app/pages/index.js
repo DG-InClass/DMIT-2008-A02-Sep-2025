@@ -23,9 +23,11 @@ import TextField from '@mui/material/TextField';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-import AdaptationReviewCard from '../components/AdaptationReviewCard'
+import AdaptationReviewCard from '../components/AdaptationReviewCard';
 
+import { useRouter } from 'next/router';
 import { getReviews, postReview } from '../utils/api/reviews.js'
+
 export async function getServerSideProps(context) {
   const reviews = await getReviews();
   // equivalent to .then() in promises, the syntax is just a bit different.
@@ -38,6 +40,11 @@ export async function getServerSideProps(context) {
 
 export default function Home(props) {
   console.log('Home Props:', props);
+  const router = useRouter();
+  const refreshData = () => {
+    router.replace(router.asPath);
+  }
+
   const [reviews, setReviews] = useState([])
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
