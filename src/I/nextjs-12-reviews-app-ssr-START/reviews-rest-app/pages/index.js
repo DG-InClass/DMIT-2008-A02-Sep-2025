@@ -26,8 +26,18 @@ import Typography from '@mui/material/Typography';
 import AdaptationReviewCard from '../components/AdaptationReviewCard'
 
 import { getReviews, postReview } from '../utils/api/reviews.js'
+export async function getServerSideProps(context) {
+  const reviews = await getReviews();
+  // equivalent to .then() in promises, the syntax is just a bit different.
+  return {
+    props: {
+      reviews: reviews
+    }, // will be passed to the page component as props
+  };
+}
 
-export default function Home() {
+export default function Home(props) {
+  console.log('Home Props:', props);
   const [reviews, setReviews] = useState([])
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
