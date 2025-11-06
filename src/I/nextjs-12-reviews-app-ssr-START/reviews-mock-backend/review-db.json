@@ -11,6 +11,12 @@
       "title": "The Lord of the rings",
       "comment": "A classic movie and a classic book series as well!",
       "rating": 10
+    },
+    {
+      "title": "The Princess Bride",
+      "comment": "I saw this in the the theatres when it came out in the 1970's.",
+      "rating": "10",
+      "id": 3
     }
   ]
 }
