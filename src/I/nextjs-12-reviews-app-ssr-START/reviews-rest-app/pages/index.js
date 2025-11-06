@@ -43,17 +43,6 @@ export default function Home(props) {
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
 
-  // on the client side, our function will fetch
-  // all of our reviews on loading of the page.
-  useEffect(()=> {
-    loadAllReviews()
-  }, [])
-
-  // for debugging "reviews" purposes only
-  useEffect(()=> {
-    console.log(reviews)
-  }, [reviews])
-
   const deleteReviewItem = (deleteReviewId) => {
     let allReviews = reviews.filter((review)=> {
       return review.id !== deleteReviewId
@@ -72,11 +61,6 @@ export default function Home(props) {
       })
   }
 
-  const loadAllReviews = () => {
-    getReviews().then((data)=> {
-      setReviews(data)
-    })
-  }
 
   return (
     <div>
