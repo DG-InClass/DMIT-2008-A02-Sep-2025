@@ -53,10 +53,7 @@ export default function Home(props) {
   const [rating, setRating] = useState(0)
 
   const deleteReviewItem = (deleteReviewId) => {
-    let allReviews = reviews.filter((review)=> {
-      return review.id !== deleteReviewId
-    })
-    setReviews(allReviews)
+    refreshData();
   }
 
   const handleSubmit = (event) => {
@@ -66,7 +63,7 @@ export default function Home(props) {
         comment: comments,
         rating
       }).then((data)=> {
-        setReviews([data, ...reviews])
+        refreshData();
       })
   }
 
