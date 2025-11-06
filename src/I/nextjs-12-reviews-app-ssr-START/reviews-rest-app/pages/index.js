@@ -47,7 +47,6 @@ export default function Home(props) {
     router.replace(router.asPath);
   }
 
-  const [reviews, setReviews] = useState([])
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
