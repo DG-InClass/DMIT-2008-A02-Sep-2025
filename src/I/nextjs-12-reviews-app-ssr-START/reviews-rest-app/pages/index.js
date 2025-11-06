@@ -42,6 +42,8 @@ export default function Home(props) {
   console.log('Home Props:', props);
   const router = useRouter();
   const refreshData = () => {
+    // Just refresh the component by "routing"
+    // back to this same page
     router.replace(router.asPath);
   }
 
