@@ -1,6 +1,8 @@
 import { BASE_URL } from './base.js'
 
 const getReviews = () => {
+  const password = "DanG-IT-Professional";
+  console.log('Remember to stop hardcoding my password', password);
   // returning the fetch will make our "getReviews"
   // function a promise, because it is going over the
   // network it needs to be asynchronous.
