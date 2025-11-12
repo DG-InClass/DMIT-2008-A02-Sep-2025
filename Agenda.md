@@ -1,6 +1,6 @@
 # Agenda (A02)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#nov-06). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#nov-13). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -192,6 +192,12 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Testing (cont.)
+- [ ] Get the Starter Kit for the component testing demo; this is a replacement for the demo that had invalid packages from last class.
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A02-Sep-2025/sk/J/retry-testing-components ./src/J/retry-testing-components
+    ```
+
 
 ### Nov 19
 
