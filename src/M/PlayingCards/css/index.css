@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+header {
+    @apply bg-white dark:bg-gray-900 shadow;
+
+    nav {
+        @apply container mx-auto px-4 py-3 flex justify-between items-center;
+
+        div {
+            @apply text-2xl font-semibold text-gray-800 dark:text-white;
+        }
+
+        ul {
+            @apply flex space-x-8 text-gray-600 dark:text-gray-300 font-medium;
+
+            li {
+                @apply hover:text-blue-600 dark:hover:text-blue-400 transition-colors;
+            }
+        }
+    }
+}
+
+main {
+    @apply container mx-auto px-4 py-3;
+
+    section {
+        @apply flex flex-col gap-2;
+    }
+    section.hidden {
+        @apply hidden;
+    }
+
+    #players h2 {
+        @apply font-bold;
+    }
+    #players h2::before {
+        content: 'Player: ';
+        @apply italic font-light;
+    }
+}
+
+
+/* ## Fat Footer
+| Element                                 | Tailwind Roles                                 |
+| --------------------------------------- | ---------------------------------------------- |
+| `bg-gray-900 text-gray-100`             | Dark theme background with light text          |
+| `max-w-7xl mx-auto grid md:grid-cols-4` | Responsive 4-column grid that stacks on mobile |
+| `space-y-2`                             | Even vertical spacing for link lists           |
+| `hover:text-white`                      | Smooth hover contrast                          |
+| `border-t border-gray-700`              | Divider above copyright                        |
+| `px-8 py-12`                            | Comfortable “fat” padding                      |
+*/
+
+footer {
+    @apply bg-gray-900 text-gray-100 px-8 py-12;
+
+    /* Alternate Gradient */
+    /* @apply bg-gradient-to-t from-gray-900 via-gray-800 to-gray-700 text-gray-100; */
+
+    > div {
+        @apply max-w-7xl mx-auto grid gap-10 md:grid-cols-4;
+
+        div h2 {
+            @apply text-2xl font-bold mb-4;
+        }
+        div h3 {
+            @apply text-lg font-semibold mb-3;
+        }
+        div p {
+            @apply text-gray-400 text-sm;
+        }
+        div h3 + p {
+            @apply text-gray-400 text-sm mb-4;
+        }
+        div ul {
+            @apply space-y-2 text-gray-400;
+
+            li > a {
+                @apply hover:text-white;
+            }
+        }
+    }
+
+    form {
+        @apply flex flex-col gap-3 max-w-sm;
+
+        input {
+            @apply px-3 py-2 rounded-md text-gray-100 placeholder-gray-400 bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent w-full sm:w-auto flex-grow;
+        }
+        button {
+            @apply bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md font-semibold;
+        }
+    }
+
+    div.copyright {
+        @apply border-t border-gray-700 mt-12 pt-6 text-sm text-gray-500 text-center;
+    }
+
+}
+
+img {
+    width: 108px;
+    @apply inline px-2;
+}
+
+h1 {
+    @apply text-3xl font-bold underline mb-2;
+}
+h2 {
+    @apply text-2xl mb-1.5;
+}
+
+
+input {
+    @apply rounded-2xl border-2 border-slate-500 px-2 py-1;
+}
+
+button {
+    @apply rounded-sm border-2 border-slate-600 px-2 py-1 bg-slate-400 text-white;
+}

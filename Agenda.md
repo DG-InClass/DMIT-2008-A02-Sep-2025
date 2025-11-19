@@ -208,6 +208,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/012/PlayingCards ./src/M/PlayingCards
     ```
 
+    - We explored creating an [Astro](https://astro.build/) website for a person profile using the [*Astro Starlight*](https://starlight.astro.build/) option (from the step in `pnpm create astro@latest`)
+      - Customizing:
+        - [Pages in Astro](https://docs.astro.build/en/basics/astro-pages/)
+        - [Styling and CSS in Astro](https://docs.astro.build/en/guides/styling/)
+        - [Overriding Components in Starlight](https://starlight.astro.build/guides/overriding-components/)
+
+
 ### Nov 20
 
 - **Today**

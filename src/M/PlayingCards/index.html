@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing With Arrays</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>Array of Playing Cards</div>
+            <ul>
+                <li><a href="http://dgilleland.github.io/CPSC-1520/demos/playing-cards/" target="_blank"
+                        rel="noopener noreferrer">Learn More</a></li>
+                <li>Pricing</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Card Game</h1>
+        <section>
+            <form>
+                <input type="text" name="playerNames" placeholder="Comma-separated names" autofocus/>
+                <button type="submit" name="createPlayers">Create Players</button>
+            </form>
+        </section>
+        <button id="deal-me-in" type="button">
+            <img src="/img/back.png" alt="Faux Deck" />
+        </button>
+        <section id="players" class="hidden">
+        </section>
+    </main>
+    <footer>
+        <div>
+            <!-- Brand -->
+            <div>
+                <h2>DG Training</h2>
+                <p>
+                    Empowering digital creators and learners through modern web technologies.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h3>Stay Updated</h3>
+                <p>
+                    Subscribe to our newsletter for updates and resources.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-2">
+                    <input type="email" placeholder="Your email"
+                        />
+                    <button type="submit">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 DG Training &ndash; All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
