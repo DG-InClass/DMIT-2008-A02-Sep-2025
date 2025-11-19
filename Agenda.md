@@ -201,10 +201,17 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Nov 19
 
-- **Today**
-  - Testing (cont.)
+- **TODAY**
+  - Few people showed up, so I showed them how to make money.
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/012/PlayingCards ./src/M/PlayingCards
+    ```
 
 ### Nov 20
+
+- **Today**
+  - Testing (cont.)
 
 - **Today**
   - Begin [Part K](./src/K/ReadMe.md)
