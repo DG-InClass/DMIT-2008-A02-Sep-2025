@@ -1,4 +1,4 @@
-import {useState, useEffect } from 'react'
+import {useState, useEffect, useContext } from 'react'
 
 import Container from '@mui/material/Container';
 
@@ -7,11 +7,15 @@ import AdaptationReviewForm from '../components/AdaptationReviewForm';
 import NavBar from '../components/NavBar'
 import SEO from '../components/SEO'
 
+import { AppNotificationContext } from '../components/state/AppNotification';
+
 import { getReviews } from '../utils/api/reviews'
 
 export default function Home() {
   const [reviews, setReviews] = useState([])
   
+  const {showNotification} = useContext(AppNotificationContext);
+
   useEffect(()=> {
     loadAllReviews()
   }, [])
@@ -26,6 +30,11 @@ export default function Home() {
   const loadAllReviews = () => {
     getReviews().then((data)=> {
       setReviews(data)
+      // display the notification
+      showNotification({
+        message: "Loaded reviews successfully",
+        severity: "info"
+      });
     })
   }
 
