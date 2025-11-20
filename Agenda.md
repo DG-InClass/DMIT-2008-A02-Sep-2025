@@ -218,9 +218,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Nov 20
 
 - **Today**
-  - Testing (cont.)
-
-- **Today**
   - Begin [Part K](./src/K/ReadMe.md)
     - `useContext()` and Application State
 
@@ -232,7 +229,9 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Nov 27
 
+
 - **Today**
+  - [ ] Finish Testing (*Mock Service Worker*)
   - General Review
   - About *Assignment **5***
 
