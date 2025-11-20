@@ -33,9 +33,9 @@ export default function AppNotification(props) {
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
             <MuiAlert elevation={6} variant='filled'
                 sx={ { width: '100%' } }
-                onClose={handleClose} severity='success'
+                onClose={handleClose} severity={severity}
             >
-                This is a success message (hardcoded)!
+                {text}
             </MuiAlert>
         </Snackbar>
     </AppNotificationContext.Provider>
