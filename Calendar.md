@@ -20,7 +20,7 @@ This draft planning calendar shows the dates for all **evaluation items**. For a
 | Week 10<br />Part **G** |   Nov 3 - 7    | **Nov 7 - Practical 4A Due**<br />*Nov 7 - Practical 4B Out*  |
 | Week 11<br />Part **H** |  Nov 10 - 14   |                                                               |
 | Week 12<br />Part **I** |  Nov 17 - 21   | **Nov 21 - Practical 4B Due**<br />*Nov 21 - Theory 2 Out*    |
-| Week 13<br />Part **J** |  Nov 24 - 28   | *Nov 28 - Practical 5 Out*                                    |
-| Week 14<br />Part **K** |   Dec 1 - 5    | **Dec 5 - Theory 2 Due**                                      |
-| Week 15 |   Dec 8 - 12   | **Dec 12 - Practical 5 Due**                                  |
-| Week 16 |  Dec 15 - 16   |                                                               |
+| Week 13<br />Part **J** |  Nov 24 - 28   |                                     |
+| Week 14<br />Part **K** |   Dec 1 - 5    | *Dec 1 - Practical 5 Out*<br />**Dec 5 - Theory 2 Due**                                      |
+| Week 15 |   Dec 8 - 12   |                                   |
+| Week 16 |  Dec 15 - 16   | **Dec 15 - Practical 5 Due**                                                              |
